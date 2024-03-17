@@ -30,7 +30,7 @@ export default function Contact() {
             className='flex-1 w-full p-6 rounded-3xl shadow-lowneumorphism hover:shadow-lg hover:rounded-3xl transition-shadow duration-300 hover:shadow-neumorphism'>
               <a href='https://www.instagram.com/nutcnw/' target='_blank' rel='noopener noreferrer' className='flex items-center space-x-3'>
                 <div className='border border-black rounded-full p-2 transform hover:scale-110 transition duration-300'>
-                  <img src="/instagram_logo.png" alt="Instagram" className="w-6 h-6" />
+                  <img src="/instagram_logo.svg" alt="Instagram" className="w-6 h-6" />
                 </div>
                 <span>Instagram/nutcnw</span>
               </a>

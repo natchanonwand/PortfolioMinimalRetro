@@ -1,0 +1,38 @@
+@import url('https://fonts.cdnfonts.com/css/bauhaus-93');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 12px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f0f0f0;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 0px;
+  }
+
+  .zoom {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform: scale(2.15); 
+    transform-origin: bottom left; 
+  }
+
+  .button-retro {
+    background: #f2b01e; /* A mustard yellow */
+    font-family: 'Cooper Black', sans-serif;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 4px 4px 0px 0px #d89216; /* A darker shade for depth */
+    border-radius: 0; /* Retro buttons were often not rounded */
+  }
+  
+  .button-retro:hover {
+    background: #c1971d; /* Darken on hover */
+    box-shadow: 6px 6px 0px 0px #a67c1d;
+  }

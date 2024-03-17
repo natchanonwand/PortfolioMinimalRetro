@@ -14,6 +14,7 @@
   .custom-scrollbar::-webkit-scrollbar-thumb {
     background: #000000;
     border-radius: 0px;
+    border-left: 4px solid #000000;
   }
 
   .zoom {
@@ -35,4 +36,16 @@
   .button-retro:hover {
     background: #c1971d; /* Darken on hover */
     box-shadow: 6px 6px 0px 0px #a67c1d;
+  }
+
+  @keyframes pulse-scale {
+    0%, 40%, 80% {
+      transform: scale(1);
+    }
+    30%, 60% {
+      transform: scale(0.9);
+    }
+  }
+  .pulse-scale-animation {
+    animation: pulse-scale 1s infinite;
   }

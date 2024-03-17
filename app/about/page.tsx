@@ -163,7 +163,7 @@ export default function About() {
                 animate={{x:2  }}
                 transition={{ type: 'spring', stiffness: 80 , mass: 0.5}}
                 style={{ width: '600px' }}
-                className='flex-1 p-4 rounded-3xl hover:shadow-lg hover:rounded-3xl transition-shadow duration-300 hover:shadow-neumorphism'>
+                className='flex-1 p-3 rounded-3xl hover:shadow-lg hover:rounded-3xl transition-shadow duration-300 hover:shadow-neumorphism'>
                   <a href='https://github.com/natchanonwand/API-Deployment' target='_blank' rel='noopener noreferrer' className='flex items-center space-x-3'>
                     <div className='border border-black rounded-full p-2 transform hover:scale-110 transition duration-300'>
                       <img src="/github-mark.svg" alt="Git" className="w-10 h-10" />
@@ -176,7 +176,7 @@ export default function About() {
                 animate={{ opacity: 1, z: 0 }}
                 transition={{ ease: 'easeOut', duration: 0.6 }} 
                 style={{ width: '600px' }}
-                className='flex-1 p-4 rounded-3xl hover:shadow-lg hover:rounded-3xl transition-shadow duration-300 hover:shadow-neumorphism'>
+                className='flex-1 p-3 rounded-3xl hover:shadow-lg hover:rounded-3xl transition-shadow duration-300 hover:shadow-neumorphism'>
                   <a href='https://github.com/natchanonwand/React_Deployment' target='_blank' rel='noopener noreferrer' className='flex items-center space-x-3'>
                     <div className='border border-black rounded-full p-2 transform hover:scale-110 transition duration-300'>
                       <img src="/github-mark.svg" alt="Git" className="w-10 h-10" />
@@ -191,9 +191,10 @@ export default function About() {
                 This project focuses on the production line monitoring of the "New counting process by automatic machines." The requirements include 
                 a database for the counting machine and a web application containing a dashboard for monitoring goods and a history section for inspection 
                 and exporting to a CSV file.First, I have started by creating the MySQL database, which refers to the real one currently used by the company. 
-                It contains all the fields that are necessary for storing all the data. After that I was working on backend API so that other service can access to 
-                the database 
-                </p> <img src="" alt="" />  
+                It contains all the fields that are necessary for storing all the data.After that, I worked on the backend API so that other services can access the database. 
+                It includes both login authentication and the production line path. For the frontend stack, I chose the React.js framework because there's a vast array of tools and extensions 
+                available for React, including state management libraries (like Redux), routing solutions (like React Router which include in this project), and more. 
+                </p> 
               </div>
 
               <motion.div
@@ -201,12 +202,12 @@ export default function About() {
                 animate={{ opacity: 1, z: 0 }}
                 transition={{ ease: 'easeOut', duration: 0.6 }} 
                 style={{ width: '600px' }}
-                className='flex-1 p-4 rounded-3xl hover:shadow-lg hover:rounded-3xl transition-shadow duration-300 hover:shadow-neumorphism'>
+                className='flex-1 p-3 rounded-3xl hover:shadow-lg hover:rounded-3xl transition-shadow duration-300 hover:shadow-neumorphism'>
                   <a href='https://github.com/natchanonwand/PortfolioMinimalRetro' target='_blank' rel='noopener noreferrer' className='flex items-center space-x-3'>
                     <div className='border border-black rounded-full p-2 transform hover:scale-110 transition duration-300'>
                       <img src="/github-mark.svg" alt="Git" className="w-10 h-10" />
                     </div>
-                    <span>Portfolio: Next.js React.js framer HTML Tialwind</span>
+                    <span>Portfolio: Next.js React.js framer HTML Tailwind</span>
                   </a>
               </motion.div>
 
@@ -214,7 +215,7 @@ export default function About() {
         </div>
 
         <div className='flex w-full border-black border-t-4 ' style={{height:"300px"}}>
-          <div className=' border-r-4 border-black flex flex-col items-end'> 
+          <div className=' border-r-4 border-black flex flex-col items-end w-[524px]'> 
             <video 
               ref={videoRef}
               src="Demo.mov" 
@@ -222,13 +223,22 @@ export default function About() {
               onClick={toggleZoom}  
               loop 
               muted
-              style={{cursor: "pointer", transition: "transform 0.3s ease", transformOrigin: "bottom left"}} 
+              style={{cursor: "pointer", transition: "transform 0.3s ease", transformOrigin: "bottom left", zIndex: isZoomed ? 1000 : 1}} 
             ></video>
             
           </div>
           
-          <div>
-            
+          <div className='flex justify-center items-center' style={{ width: 'calc(100% - 520px)' }}>
+            <div className='flex justify-center items-center text-4xl font-bold w-full'>
+              <img src="click.png" alt="Click icon" className='h-16 mx-3 pulse-scale-animation' /> 
+              <span className='w-full' style={{ lineHeight: '1.5' }}>
+                The video demo of the project:<br />
+                <span className='bg-yellow-200'>click</span> on the video<br />
+                <span className='bg-yellow-200'>to zoom in</span> and start the video
+              </span>
+
+
+            </div>
           </div>
         </div>
       </div>

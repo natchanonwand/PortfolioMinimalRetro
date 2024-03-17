@@ -555,6 +555,10 @@ video {
 .left-0{
   left: 0px;
 }
+.mx-3{
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -587,6 +591,9 @@ video {
 }
 .h-10{
   height: 2.5rem;
+}
+.h-16{
+  height: 4rem;
 }
 .h-2{
   height: 0.5rem;
@@ -635,6 +642,9 @@ video {
 }
 .w-9{
   width: 2.25rem;
+}
+.w-\[524px\]{
+  width: 524px;
 }
 .w-full{
   width: 100%;
@@ -733,6 +743,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(194 65 12 / var(--tw-bg-opacity));
 }
+.bg-yellow-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 240 138 / var(--tw-bg-opacity));
+}
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -751,9 +765,6 @@ video {
 }
 .p-3{
   padding: 0.75rem;
-}
-.p-4{
-  padding: 1rem;
 }
 .p-6{
   padding: 1.5rem;
@@ -785,6 +796,10 @@ video {
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 .text-5xl{
   font-size: 3rem;
@@ -844,6 +859,7 @@ video {
   .custom-scrollbar::-webkit-scrollbar-thumb {
     background: #000000;
     border-radius: 0px;
+    border-left: 4px solid #000000;
   }
 
   .zoom {
@@ -866,27 +882,34 @@ video {
     background: #c1971d; /* Darken on hover */
     box-shadow: 6px 6px 0px 0px #a67c1d;
   }
-  
+
+  @keyframes pulse-scale {
+    0%, 40%, 80% {
+      transform: scale(1);
+    }
+    30%, 60% {
+      transform: scale(0.9);
+    }
+  }
+  .pulse-scale-animation {
+    animation: pulse-scale 1s infinite;
+  }
   .hover\:scale-110:hover{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-  
   .hover\:rounded-3xl:hover{
   border-radius: 1.5rem;
 }
-  
   .hover\:shadow-neumorphism:hover{
   --tw-shadow: 5px 5px 0px #707070, -5px -5px 0px #ffffff;
   --tw-shadow-colored: 5px 5px 0px var(--tw-shadow-color), -5px -5px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-  
   .group:hover .group-hover\:w-full{
   width: 100%;
 }
-  
   @media (min-width: 768px){
 
   .md\:block{

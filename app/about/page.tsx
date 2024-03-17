@@ -22,14 +22,14 @@ export default function About() {
   }
 
   return (
-    <section className='flex'>
-      <div className='w-1/5 border-r-4 border-black'>
-        <h1 className='mb-1 text-xl font-bold p-3'>Skills</h1>
+    <section className='flex flex-col lg:flex-row'>
+      <div className='w-full lg:w-1/5 border-b-4 lg:border-r-4 lg:border-b-0 border-black'>
+        <h1 className='mb-1 text-xl font-bold p-3 text-center lg:text-left'>Skills</h1>
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ease: 'easeOut', duration: 0.1 }}
-          className='gap-2 text-sm flex items-center h-8 ml-4 mb-2'
+          className='gap-2 text-sm flex items-center h-8 ml-4 mb-2 justify-center lg:justify-start'
            > 
           <img src="docker.svg" alt="Docker" className="w-8 h-8"/>Docker
         </motion.div> 
@@ -37,7 +37,7 @@ export default function About() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ease: 'easeOut', duration: 0.5 ,delay: 0.2 }}
-          className='gap-2 text-sm flex items-center h-8 ml-4 mb-2'
+          className='gap-2 text-sm flex items-center h-8 ml-4 mb-2 justify-center lg:justify-start'
            > 
           <img src="grafana.svg" alt="React" className="w-8 h-8"/>Grafana
         </motion.div> 
@@ -45,7 +45,7 @@ export default function About() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ease: 'easeOut', duration: 0.5 ,delay: 0.4}}
-          className='gap-2 text-sm flex items-center h-8 ml-4 mb-2'
+          className='gap-2 text-sm flex items-center h-8 ml-4 mb-2 justify-center lg:justify-start'
            > 
           <img src="next.svg" alt="Next" className="w-8 h-8"/>Next 
         </motion.div>
@@ -53,7 +53,7 @@ export default function About() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ease: 'easeOut', duration: 0.5 ,delay: 0.6}}
-          className='gap-2 text-sm flex items-center h-8 ml-4 mb-2'
+          className='gap-2 text-sm flex items-center h-8 ml-4 mb-2 justify-center lg:justify-start'
            > 
           <img src="reactjs.svg" alt="React" className="w-8 h-8"/>React
         </motion.div> 
@@ -61,7 +61,7 @@ export default function About() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ease: 'easeOut', duration: 0.5 ,delay: 0.8}}
-          className='gap-2 text-sm flex items-center h-7 ml-4 mb-2'
+          className='gap-2 text-sm flex items-center h-7 ml-4 mb-2 justify-center lg:justify-start'
            > 
           <img src="javascript.svg" alt="JS" className="w-7 h-7"/>Javascript
         </motion.div>  
@@ -69,7 +69,7 @@ export default function About() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ease: 'easeOut', duration: 0.5 ,delay: 1}}
-          className='gap-2 text-sm flex items-center h-7 ml-4 mb-2'
+          className='gap-2 text-sm flex items-center h-7 ml-4 mb-2 justify-center lg:justify-start'
            > 
           <img src="typescript.svg" alt="TS" className="w-7 h-7"/>Typescript
         </motion.div> 
@@ -77,7 +77,7 @@ export default function About() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ease: 'easeOut', duration: 0.5 ,delay: 1.2}}
-          className='gap-2 text-sm flex items-center h-7 ml-4 mb-2'
+          className='gap-2 text-sm flex items-center h-7 ml-4 mb-2 justify-center lg:justify-start'
            > 
           <img src="html.svg" alt="HTML" className="w-7 h-7"/>HTML
         </motion.div> 
@@ -85,7 +85,7 @@ export default function About() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ease: 'easeOut', duration: 0.5 ,delay: 1.4}}
-          className='gap-2 text-sm flex items-center h-7 ml-4 mb-2'
+          className='gap-2 text-sm flex items-center h-7 ml-4 mb-2 justify-center lg:justify-start'
            > 
           <img src="css.svg" alt="CSS" className="w-7 h-7"/>CSS Tialwind
         </motion.div> 
@@ -93,7 +93,7 @@ export default function About() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ease: 'easeOut', duration: 0.5 ,delay: 1.6}}
-          className='gap-2 text-sm flex items-center h-8 ml-4 mb-2'
+          className='gap-2 text-sm flex items-center h-8 ml-4 mb-2 justify-center lg:justify-start'
            > 
           <img src="express.svg" alt="Express" className="w-8 h-8"/>Express.js
         </motion.div> 
@@ -101,7 +101,7 @@ export default function About() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ease: 'easeOut', duration: 0.5 ,delay: 1.8}}
-          className='gap-2 text-sm flex items-center h-8 ml-4 mb-2'
+          className='gap-2 text-sm flex items-center h-8 ml-4 mb-2 justify-center lg:justify-start'
            > 
           <img src="nodejs.svg" alt="Node" className="w-8 h-8"/>Node.js
         </motion.div> 
@@ -109,7 +109,7 @@ export default function About() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ease: 'easeOut', duration: 0.5 ,delay:2 }}
-          className='gap-2 text-sm flex items-center h-8 ml-4 mb-2'
+          className='gap-2 text-sm flex items-center h-8 ml-4 mb-2 justify-center lg:justify-start'
            > 
           <img src="python.svg" alt="Python" className="w-8 h-8"/>Python
         </motion.div> 
@@ -117,7 +117,7 @@ export default function About() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ease: 'easeOut', duration: 0.5 ,delay: 2.2}}
-          className='gap-2 text-sm flex items-center h-8 ml-4 mb-2'
+          className='gap-2 text-sm flex items-center h-8 ml-4 mb-2 justify-center lg:justify-start'
            > 
           <img src="mysql.svg" alt="MySQL" className="w-8 h-8"/>MySQL
         </motion.div> 
@@ -125,7 +125,7 @@ export default function About() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ease: 'easeOut', duration: 0.5 ,delay: 2.4}}
-          className='gap-2 text-sm flex items-center h-8 ml-4 mb-2'
+          className='gap-2 text-sm flex items-center h-8 ml-4 mb-2 justify-center lg:justify-start'
            > 
           <img src="mariadb.png" alt="MariaDB" className="w-8 h-2"/>MariaDB
         </motion.div> 
@@ -133,7 +133,7 @@ export default function About() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ease: 'easeOut', duration: 0.5 ,delay: 2.6}}
-          className='gap-2 text-sm flex items-center h-8 ml-4 mb-2'
+          className='gap-2 text-sm flex items-center h-8 ml-4 mb-2 justify-center lg:justify-start'
            > 
           <img src="mongodb.svg" alt="MongoDB" className="w-8 h-8"/>MongoDB
         </motion.div>
@@ -145,16 +145,11 @@ export default function About() {
 
       <div className='container flex flex-col p-0'>
         <div 
-          className='py-8 px-12 bg-[#EDEBF8] overflow-y-scroll scrollbar' 
+          className='py-8 px-12 bg-[#EDEBF8] overflow-y-scroll scrollbar ' 
           style={{
           scrollbarWidth: 'thin',
           scrollbarColor: '#000000 #f0f0f0',
           height:'340px',
-  
-          // backgroundImage:"url('/background7.jpg')",
-          // backgroundSize: '80%',
-          // backgroundRepeat: 'no-repeat',
-          // backgroundPosition: 'right center'
           }}
         >
           <h2 className='mb-8 text-3xl font-bold'>Works</h2>
@@ -215,21 +210,21 @@ export default function About() {
         </div>
 
         <div className='flex w-full border-black border-t-4 ' style={{height:"300px"}}>
-          <div className=' border-r-4 border-black flex flex-col items-end w-[524px]'> 
-            <video 
+          <div className=' border lg:border-r-4 border-black flex flex-col items-end w-[524px]'> 
+            <video
               ref={videoRef}
-              src="Demo.mov" 
-              className={`p-1 h-full object-cover ${isZoomed ? 'zoom' : ''}`} 
-              onClick={toggleZoom}  
-              loop 
+              src="Demo.mov"
+              className={`p-1 h-full object-cover ${isZoomed ? (window.innerWidth < 1024 ? 'zoom-sm' : 'zoom') : ''}`}
+              onClick={toggleZoom}
+              loop
               muted
-              style={{cursor: "pointer", transition: "transform 0.3s ease", transformOrigin: "bottom left", zIndex: isZoomed ? 1000 : 1}} 
+              style={{ cursor: "pointer", zIndex: isZoomed ? 1000 : 1 }}
             ></video>
             
           </div>
           
-          <div className='flex justify-center items-center' style={{ width: 'calc(100% - 520px)' }}>
-            <div className='flex justify-center items-center text-4xl font-bold w-full'>
+          <div className='hidden lg:flex justify-center items-center' style={{ width: 'calc(100% - 520px)' }}>
+            <div className='flex justify-center items-center text-xl lg:text-2xl xl:text-4xl font-bold w-full'>
               <img src="click.png" alt="Click icon" className='h-16 mx-3 pulse-scale-animation' /> 
               <span className='w-full' style={{ lineHeight: '1.5' }}>
                 The video demo of the project:<br />

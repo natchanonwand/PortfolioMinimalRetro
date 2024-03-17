@@ -24,6 +24,15 @@
     transform-origin: bottom left; 
   }
 
+  @media (max-width: 1024px) {
+    .zoom-sm {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      transform: scale(1.01);
+      transform-origin: center;
+    }
+  }
+
   .button-retro {
     background: #f2b01e; /* A mustard yellow */
     font-family: 'Cooper Black', sans-serif;

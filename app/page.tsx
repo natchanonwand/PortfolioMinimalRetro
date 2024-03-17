@@ -17,13 +17,13 @@ export default function Home() {
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ ease: 'easeOut', duration: 1 }}
-          className='mb-12 text-5xl font-bold'
+          transition={{ ease: 'easeOut', duration: 0.5 }}
+          className='mb-12 text-5xl sm:text-8xl font-bold'
         >
           Hi!
         </motion.h1>
-        <h2 className='mb-12 text-3xl font-bold'>I'm Natchanon Wandondang</h2>
-        <p className='max-w-lg'>
+        <h2 className='mb-12 text-3xl sm:text-5xl font-bold'>I'm Natchanon Wandondang</h2>
+        <p className='max-w-lg text-3xl'>
           My nickname is Nat. I'm currently a 4th-year student at KMUTNB, majoring in Electrical and Computer Engineering. 
           I'm looking for a great opportunity to start my first job as a Software Developer.
         </p>
